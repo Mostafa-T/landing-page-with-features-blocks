@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+/*
+    =========================
+        CSS INDEX
+    =========================
+
+        -- Global style 
+        -- Huddle landing page:
+        -----------------------
+            1.0) Header
+            2.0) Features
+        -----------------------
+        -- Media Queries
+        -- Custom FrameWork
+*/
+
+/* Start Global style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+/* End Global style */
+
+/* Start huddle landing page*/
+
+/* 1.0) Header */
+
+header {
+    width: 100%;
+    padding: 1rem 0rem;
+    background-image: url('../images/bg-hero-desktop.svg');
+    background-size: cover;
+    background-position: no-repeat;
+    background-color: hsl(193, 100%, 96%);
+}
+
+.nav-menu {
+    margin-top: 2rem;
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-menu .logo img {
+    width: 180px;
+}
+
+.try-btn {
+    width: 150px;
+    color: #333;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #dddd;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem 0rem;
+}
+
+
+
+.hero__caption {
+    flex: 0 0 45%;
+    margin-right: 1rem;
+}
+
+.hero__caption h1 {
+    font-size: 40px;
+}
+
+.hero__caption p {
+    margin: 1.5rem 0rem;
+    line-height: 1.5;
+}
+
+.hero__caption .action-btn {
+    width: 255px;
+    padding: 1rem;
+    color: #fff;
+    background-color: hsl(322, 100%, 66%);
+    box-shadow: 0px 0px 10px hsl(322, 100%, 66%);
+    transition: .3s;
+}
+
+.action-btn:hover {
+    background-color: hsl(322, 97%, 75%);
+}
+
+.hero__image img {
+    width: 100%;
+}
+
+/* 2.0) Features  */
+
+.features-container {
+    margin: 15% 0%;
+}
+
+.feature__component {
+    display: flex;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem;
+    box-shadow: 0px 0px 10px #dddd;
+
+}
+
+.features__left {
+    margin-left: 5%;
+}
+
+.features p {
+    margin-top: 1rem;
+    color: hsl(208, 11%, 55%);
+
+}
+
+.feature__component>div {
+    flex: 0 0 45%;
+}
+
+.features img {
+    width: 80%;
+}
+
+/* 4.0) Footer */
+
+.ready-to-build {
+
+    width: 700px;
+    text-align: center;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #dfdfdf;
+}
+
+.footer-btn {
+    max-width: 300px;
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+    margin: 1rem auto 0rem auto;
+}
+
+/* End huddle landing page*/
+
+/* Start Custom Framework */
+
+.container {
+    padding: 0px 15px;
+    margin: auto;
+}
+
+.primary-btn {
+    display: block;
+    padding: 1rem;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    text-align: center;
+    font-size: .8rem;
+}
+
+.secondary-btn {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    font-size: .8rem;
+}
+
+.img-right {
+    float: right;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+
+/* End Custom Framework */
+
+/* 
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
